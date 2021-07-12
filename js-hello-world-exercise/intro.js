@@ -1,19 +1,20 @@
 // Intro JS exercise
-console.log('oh hai! Welcome to the console!')
-console.log('You can run JavaScript directly here.')
-console.log('You can also log any output from your JavaScript files.')
+// console.log('oh hai! Welcome to the console!')
+// console.log('You can run JavaScript directly here.')
+// console.log('You can also log any output from your JavaScript files.')
 
 // Read carefully and uncomment the necessary lines one at a time as you run the code (Command-/ with your cursor on the line).
 
 // 1. What does `firstName` evaluate to on this line? Console.log to find out.
-let firstName = 'Jamal'
+// const firstName = 'Jamal'
+// console.log(firstName)
 // Write your console.log statement here
 
 // 2. Below, a new value is assigned to the firstName variable.
 // What does `firstName` evaluate to after reassignment?
 // Uncomment the following lines and see what it is with console.log:
-// firstName = "Avery"
-// console.log("The firstName variable now has an assigned value of ", firstName)
+// firstName = 'Avery'
+// console.log('The firstName variable now has an assigned value of ', firstName)
 
 // 3. What is happening here? Use console.log() to check if you're right.
 // TODO: Uncomment the following lines:
@@ -21,10 +22,14 @@ let firstName = 'Jamal'
 // console.log("The name variable evaluates to ", name)
 
 // 4. Assign a value to the `greeting` variable that is a string that represents a greeting, and log it to the console.
-let greeting
+// const greeting = 'Hello!'
+// console.log(greeting)
 
 // 5. Combine the `greeting` and `name` variables to output a personalized greeting. Log it to the console.
 // Write your code here
+// const personalGreeting = greeting + ' ' +
+//  firstName
+// console.log(personalGreeting)
 
 // 6. What does `result` evaluate to?
 // Uncomment the following lines and use console.log() to check what value is stored in the variable `result`
