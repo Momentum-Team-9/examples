@@ -23,12 +23,11 @@ todoList.addEventListener('click', function (e) {
   if (e.target.classList.contains('delete')) {
     deleteTodo(e.target)
   }
-})
 
-todoList.addEventListener('click', function (e) {
-  // do the thing
-}
-)
+  if (e.target.classList.contains('edit')) {
+    updateTodo(e.target)
+  }
+})
 
 /* DOM manipulation */
 
@@ -118,9 +117,7 @@ function deleteTodo (element) {
 
 // UPDATE todo
 function updateTodo (element) {
-  const todoId = element.parentElement.id
-  fetch(url + '/' + `${todoId}`, {
-    // what do you need to send with your request in order to edit an item?
-  })
+
 }
+
 listTodos()
