@@ -109,5 +109,4 @@ tmp/
 temp/
 
 # End of https://www.gitignore.io/api/node
-# db.json
-{"mode":"full","isActive":false}
+db.json
