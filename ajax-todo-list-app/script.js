@@ -1,6 +1,6 @@
 /* globals fetch, moment */
 
-const url = 'http://localhost:3000/todos/'
+const url = 'http://localhost:3000/todos'
 const form = document.querySelector('#todo-form')
 const todoList = document.querySelector('#todo-list')
 
@@ -26,6 +26,7 @@ todoList.addEventListener('click', function (e) {
 
   if (e.target.classList.contains('edit')) {
     updateTodo(e.target)
+    form.reset()
   }
 })
 
@@ -71,7 +72,6 @@ function listTodos () {
       // here is where I am going to loop through my array
       // of todo objects.
       for (const todo of data) {
-        console.log(todo)
         renderTodoItem(todo)
       }
     })
@@ -117,7 +117,24 @@ function deleteTodo (element) {
 
 // UPDATE todo
 function updateTodo (element) {
-
+  const todoId = element.parentElement.id
+  const todoText = document.getElementById('todo-text').value
+  fetch(url + '/' + `${todoId}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      title: todoText,
+      body: todoText,
+      updated_at: moment().format()
+    })
+  })
+    .then((res) => {
+      return res.json()
+    })
+    .then((data) => {
+      console.log(data)
+      renderTodoText(element.parentElement, data)
+    })
 }
 
 listTodos()

@@ -1,3 +1,16 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "title": "Get cashew milk from store",
+      "body": "Get cashew milk from store",
+      "updated_at": "2021-07-23T13:17:25-04:00",
+      "id": 1
+    },
+    {
+      "title": "Get bleached white eggs from store",
+      "body": "Get bleached white eggs from store",
+      "updated_at": "2021-07-23T13:16:06-04:00",
+      "id": 2
+    }
+  ]
 }
